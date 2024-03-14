@@ -1,0 +1,251 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo pastel */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header .container {
+    padding-top: 0;
+}
+
+
+
+header, nav, section, footer {
+    background-color: #ffffff; /* Color de fondo para secciones */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header .nueva-para-logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em 0em 0em 1em;
+}
+
+header img {
+    max-width: 100%;
+    width: 80px;
+    height: 90px;
+    position: absolute;
+}
+
+h1, h2, h3 {
+    color: #333333; /* Color de texto principal */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Color de enlaces */
+}
+
+/* Estilos específicos para secciones */
+
+header {
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+section {
+    padding: 40px;
+}
+
+.tutorial, .categoria {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*.testimonio {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.testimonio p {
+    margin-bottom: 10px;
+}*/
+
+/* Estilos para la sección de testimonios */
+#testimonios {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#testimonios .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#testimonios h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.testimonio {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio cite {
+    display: block;
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.testimonio p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Estilos para las imágenes dentro de la sección de tutoriales */
+#destacados img {
+    max-width: 100%; /* Hace que las imágenes sean responsive */
+    height: auto; /* Preserva la proporción original de las imágenes */
+}
+
+#categorias img {
+    max-width: 100%; /* Hace que las imágenes sean responsive */
+    height: auto;
+}
+
+/* Estilos para los testimonios alternados */
+.testimonio:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.testimonio:nth-child(even) p {
+    font-style: italic;
+}
+
+.testimonio:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    margin-bottom: 10px;
+}
+
+/* Estilos para colores pastel */
+
+header, nav, section, footer {
+    background-color: #f8d7da; /* Rosa */
+}
+
+h1, h2, h3 {
+    color: #6c757d; /* Gris oscuro */
+}
+
+a {
+    color: #007bff; /* Azul */
+}
+
+/* Cambiar los colores de fondo según la sección */
+
+#destacados {
+    background-color: #d4edda; /* Verde claro */
+}
+
+#categorias {
+    background-color: #fff3cd; /* Amarillo claro */
+}
+
+#testimonios {
+    background-color: #cce5ff; /* Azul claro */
+}
+
+#registro {
+    background-color: #d6d8d9; /* Gris */
+}
+
+footer {
+    background-color: #f8f9fa; /* Gris claro */
+}
+
+footer a {
+    color: #6c757d; /* Gris oscuro */
+}
+
+/* Estilos para dispositivos de pantalla pequeña (máximo 768px de ancho) */
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        background-color: #fce1b0;
+    }
+
+    #testimonios {
+        padding: 40px 0; /* Reducción del espaciado interno */
+    }
+
+    .testimonio {
+        grid-template-columns: 1fr; /* Cambia a una columna */
+    }
+
+    header img {
+        position: relative;
+    }
+    header .nueva-para-logo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .redes-sociales nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .redes-sociales nav ul a {
+        padding: 0.5em;
+        display: flex;
+    }
+
+}
+
+/* Estilos para dispositivos de pantalla mediana a grande (más de 768px de ancho) */
+@media (min-width: 769px) {
+    #testimonios {
+        padding: 80px 0; /* Restauración del espaciado interno */
+    }
+
+    .testimonio {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Vuelve al diseño de cuadrícula adaptable */
+    }
+}
